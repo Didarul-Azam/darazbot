@@ -1,0 +1,461 @@
+2024-09-24 04:23:52 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-09-24 04:23:52 [scrapy.extensions.telnet] INFO: Telnet Password: 2ec97f217776e166
+2024-09-24 04:23:52 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2024-09-24 04:23:52 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_DEBUG': True,
+ 'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_START_DELAY': 2,
+ 'BOT_NAME': 'darazbot',
+ 'CONCURRENT_REQUESTS': 2,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'JOBDIR': 'crawls/daraz_headphone_search',
+ 'LOG_FILE': 'scrapy_log.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'darazbot.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429, 400],
+ 'RETRY_TIMES': 4,
+ 'SPIDER_MODULES': ['darazbot.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2024-09-24 04:23:54 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'darazbot.middlewares.ScrapeOpsHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-09-24 04:23:54 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-09-24 04:23:54 [scrapy.middleware] INFO: Enabled item pipelines:
+['darazbot.pipelines.DarazbotPipeline', 'darazbot.pipelines.CsvExportPipeline']
+2024-09-24 04:23:54 [scrapy.core.engine] INFO: Spider opened
+2024-09-24 04:23:54 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-09-24 04:23:54 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-09-24 04:23:54 [scrapy-playwright] INFO: Starting download handler
+2024-09-24 04:23:54 [scrapy-playwright] INFO: Starting download handler
+2024-09-24 04:23:59 [scrapy-playwright] INFO: Launching browser chromium
+2024-09-24 04:23:59 [scrapy-playwright] INFO: Browser chromium launched
+2024-09-24 04:24:03 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 1 | delay: 4031 ms (+2031) | latency: 4031 ms | size:1088634 bytes
+2024-09-24 04:24:03 [root] INFO: is_disabled: false
+2024-09-24 04:24:03 [root] INFO: moving to page no. 2
+2024-09-24 04:24:06 [root] INFO: page no. 2 url : https://www.daraz.com.bd/catalog/?page=2&q=headphone
+2024-09-24 04:24:11 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 7341 ms (+3309) | latency: 7341 ms | size:652858 bytes
+2024-09-24 04:24:11 [root] INFO: into item_parse with https://www.daraz.com.bd/products/vivo-in-year-yearphone-is-the-best-sound-quality-white-with-free-one-emphasizing-value-i215349589.html
+2024-09-24 04:24:12 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 1 | delay: 6279 ms (-1062) | latency: 5217 ms | size:658207 bytes
+2024-09-24 04:24:12 [root] INFO: into item_parse with https://www.daraz.com.bd/products/akg_super-samsung-i324358387.html
+2024-09-24 04:24:17 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 1 | delay: 3960 ms (-2318) | latency: 1641 ms | size:1033790 bytes
+2024-09-24 04:24:17 [root] INFO: is_disabled: false
+2024-09-24 04:24:17 [root] INFO: moving to page no. 3
+2024-09-24 04:24:19 [root] INFO: page no. 3 url : https://www.daraz.com.bd/catalog/?page=3&q=headphone
+2024-09-24 04:24:29 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 5796 ms (+1836) | latency: 5796 ms | size:662932 bytes
+2024-09-24 04:24:29 [root] INFO: into item_parse with https://www.daraz.com.bd/products/uiisii-c100-in-ear-wired-heavy-bass-earphones-with-mic-ear-phone-headphone-headphone-headphone-ear-phone-earphone-headphone-i140492300.html
+2024-09-24 04:24:35 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 6525 ms (+728) | latency: 6525 ms | size:660461 bytes
+2024-09-24 04:24:35 [root] INFO: into item_parse with https://www.daraz.com.bd/products/samsung-galaxy-xiaomi-huawei-35mm-baseus-h17-35mm-hifi-i321044233.html
+2024-09-24 04:24:36 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 1 | delay: 4081 ms (-2443) | latency: 1637 ms | size:1031148 bytes
+2024-09-24 04:24:37 [root] INFO: is_disabled: false
+2024-09-24 04:24:37 [root] INFO: moving to page no. 4
+2024-09-24 04:24:39 [root] INFO: page no. 4 url : https://www.daraz.com.bd/catalog/?page=4&q=headphone
+2024-09-24 04:24:46 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 1 | delay: 5578 ms (+1497) | latency: 5578 ms | size:675315 bytes
+2024-09-24 04:24:46 [root] INFO: into item_parse with https://www.daraz.com.bd/products/cute-cartoon-rabbit-wired-earphone-with-microphone-for-girls-headphone-headphone-i259844933.html
+2024-09-24 04:24:52 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 1 | delay: 5685 ms (+107) | latency: 5685 ms | size:365506 bytes
+2024-09-24 04:24:52 [root] INFO: into item_parse with https://www.daraz.com.bd/products/-i404735956.html?pdpBucketId=2
+2024-09-24 04:24:54 [scrapy.extensions.logstats] INFO: Crawled 9 pages (at 9 pages/min), scraped 5 items (at 5 items/min)
+2024-09-24 04:24:56 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 1 | delay: 3510 ms (-2175) | latency: 1334 ms | size:400753 bytes
+2024-09-24 04:25:53 [root] WARNING: bad url sent by server for url: https://www.daraz.com.bd/products/-i404735956.html?pdpBucketId=2
+2024-09-24 04:25:53 [root] INFO: Now trying again with https://www.daraz.com.bd/products/-i404735956.html
+2024-09-24 04:25:53 [root] INFO: response request url : https://www.daraz.com.bd/products/-i404735956.html
+2024-09-24 04:25:54 [scrapy.extensions.logstats] INFO: Crawled 10 pages (at 1 pages/min), scraped 5 items (at 0 items/min)
+2024-09-24 04:25:56 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.daraz.com.bd/catalog/?page=4&q=headphone> (referer: https://www.daraz.com.bd/catalog/?page=3&q=headphone)
+Traceback (most recent call last):
+  File "/Users/niloy/anaconda3/envs/ws/lib/python3.11/site-packages/scrapy/utils/defer.py", line 295, in aiter_errback
+    yield await it.__anext__()
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/niloy/anaconda3/envs/ws/lib/python3.11/site-packages/scrapy/utils/python.py", line 374, in __anext__
+    return await self.data.__anext__()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/niloy/anaconda3/envs/ws/lib/python3.11/site-packages/scrapy/utils/python.py", line 355, in _async_chain
+    async for o in as_async_generator(it):
+  File "/Users/niloy/anaconda3/envs/ws/lib/python3.11/site-packages/scrapy/utils/asyncgen.py", line 14, in as_async_generator
+    async for r in it:
+  File "/Users/niloy/anaconda3/envs/ws/lib/python3.11/site-packages/scrapy/utils/python.py", line 374, in __anext__
+    return await self.data.__anext__()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/niloy/anaconda3/envs/ws/lib/python3.11/site-packages/scrapy/utils/python.py", line 355, in _async_chain
+    async for o in as_async_generator(it):
+  File "/Users/niloy/anaconda3/envs/ws/lib/python3.11/site-packages/scrapy/utils/asyncgen.py", line 14, in as_async_generator
+    async for r in it:
+  File "/Users/niloy/anaconda3/envs/ws/lib/python3.11/site-packages/scrapy/core/spidermw.py", line 118, in process_async
+    async for r in iterable:
+  File "/Users/niloy/anaconda3/envs/ws/lib/python3.11/site-packages/scrapy/spidermiddlewares/referer.py", line 355, in process_spider_output_async
+    async for r in result or ():
+  File "/Users/niloy/anaconda3/envs/ws/lib/python3.11/site-packages/scrapy/core/spidermw.py", line 118, in process_async
+    async for r in iterable:
+  File "/Users/niloy/anaconda3/envs/ws/lib/python3.11/site-packages/scrapy/spidermiddlewares/urllength.py", line 30, in process_spider_output_async
+    async for r in result or ():
+  File "/Users/niloy/anaconda3/envs/ws/lib/python3.11/site-packages/scrapy/core/spidermw.py", line 118, in process_async
+    async for r in iterable:
+  File "/Users/niloy/anaconda3/envs/ws/lib/python3.11/site-packages/scrapy/spidermiddlewares/depth.py", line 35, in process_spider_output_async
+    async for r in result or ():
+  File "/Users/niloy/anaconda3/envs/ws/lib/python3.11/site-packages/scrapy/core/spidermw.py", line 118, in process_async
+    async for r in iterable:
+  File "/Users/niloy/Scraping/daraz_scraping/darazbot/darazbot/spiders/darazscraperpw.py", line 69, in search_parse
+    await page.wait_for_selector(next_page_selector,timeout=60000)
+  File "/Users/niloy/anaconda3/envs/ws/lib/python3.11/site-packages/playwright/async_api/_generated.py", line 7999, in wait_for_selector
+    await self._impl_obj.wait_for_selector(
+  File "/Users/niloy/anaconda3/envs/ws/lib/python3.11/site-packages/playwright/_impl/_page.py", line 397, in wait_for_selector
+    return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/niloy/anaconda3/envs/ws/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 323, in wait_for_selector
+    await self._channel.send("waitForSelector", locals_to_params(locals()))
+  File "/Users/niloy/anaconda3/envs/ws/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 59, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/niloy/anaconda3/envs/ws/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 514, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.wait_for_selector: Timeout 60000ms exceeded.
+Call log:
+waiting for locator("li[title= \"Next Page\"]") to be visible
+
+2024-09-24 04:25:59 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 5515 ms (+2005) | latency: 5515 ms | size:654839 bytes
+2024-09-24 04:25:59 [root] INFO: into item_parse with https://www.daraz.com.bd/products/trn-mt1-hifi-1dd-dynamic-in-ear-earphone-drive-hifi-bass-metal-monitor-running-sport-earphone-headphone-i195257506.html
+2024-09-24 04:26:07 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 5366 ms (-148) | latency: 5217 ms | size:648524 bytes
+2024-09-24 04:26:08 [root] INFO: into item_parse with https://www.daraz.com.bd/products/qkz-dm7-hifi-i335825197.html
+2024-09-24 04:26:16 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 5570 ms (+204) | latency: 5570 ms | size:658281 bytes
+2024-09-24 04:26:16 [root] INFO: into item_parse with https://www.daraz.com.bd/products/-i404735956.html
+2024-09-24 04:26:27 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 7316 ms (+1745) | latency: 7316 ms | size:653981 bytes
+2024-09-24 04:26:27 [root] INFO: into item_parse with https://www.daraz.com.bd/products/qkz-dm7-hifi-i344836318.html
+2024-09-24 04:26:35 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 6129 ms (-1186) | latency: 4942 ms | size:652810 bytes
+2024-09-24 04:26:35 [root] INFO: into item_parse with https://www.daraz.com.bd/products/wire-control-headset-for-smartphone-35mm-in-ear-wired-microphone-volume-control-headset-earphone-headphone-i252410573.html
+2024-09-24 04:26:45 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 7057 ms (+928) | latency: 7057 ms | size:357208 bytes
+2024-09-24 04:26:46 [root] INFO: into item_parse with https://www.daraz.com.bd/products/oneplus-type-c-bullets-earphones-i192185594.html?pdpBucketId=2
+2024-09-24 04:26:54 [scrapy.extensions.logstats] INFO: Crawled 16 pages (at 6 pages/min), scraped 10 items (at 5 items/min)
+2024-09-24 04:27:47 [root] WARNING: bad url sent by server for url: https://www.daraz.com.bd/products/oneplus-type-c-bullets-earphones-i192185594.html?pdpBucketId=2
+2024-09-24 04:27:47 [root] INFO: Now trying again with https://www.daraz.com.bd/products/oneplus-type-c-bullets-earphones-i192185594.html
+2024-09-24 04:27:47 [root] INFO: response request url : https://www.daraz.com.bd/products/oneplus-type-c-bullets-earphones-i192185594.html
+2024-09-24 04:27:52 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 5937 ms (-1120) | latency: 4817 ms | size:646094 bytes
+2024-09-24 04:27:52 [root] INFO: into item_parse with https://www.daraz.com.bd/products/uiisii-c100-in-ear-wired-earphones-i174068065.html
+2024-09-24 04:27:54 [scrapy.extensions.logstats] INFO: Crawled 17 pages (at 1 pages/min), scraped 10 items (at 0 items/min)
+2024-09-24 04:28:00 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 5787 ms (-150) | latency: 5637 ms | size:652605 bytes
+2024-09-24 04:28:01 [root] INFO: into item_parse with https://www.daraz.com.bd/products/xiaomi-mi-in-ear-headphones-basic-black-i275435.html
+2024-09-24 04:28:08 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 5121 ms (-665) | latency: 4455 ms | size:646187 bytes
+2024-09-24 04:28:08 [root] INFO: into item_parse with https://www.daraz.com.bd/products/oneplus-type-c-bullets-earphones-i192185594.html
+2024-09-24 04:28:16 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 4993 ms (-128) | latency: 4864 ms | size:656131 bytes
+2024-09-24 04:28:16 [root] INFO: into item_parse with https://www.daraz.com.bd/products/uiisii-hm12-half-in-ear-headset-metal-bass-music-earphone-wired-headphones-with-mic-and-pouch-bag-headphone-headphone-ear-phone-earphone-headphone-i123448712.html
+2024-09-24 04:28:54 [scrapy.extensions.logstats] INFO: Crawled 20 pages (at 3 pages/min), scraped 14 items (at 4 items/min)
+2024-09-24 04:29:42 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:60000 ms (+55006) | latency:82814 ms | size:652611 bytes
+2024-09-24 04:29:43 [root] INFO: into item_parse with https://www.daraz.com.bd/products/remax-rm-510-high-performance-earphones-headphone-i268435993.html
+2024-09-24 04:29:54 [scrapy.extensions.logstats] INFO: Crawled 21 pages (at 1 pages/min), scraped 15 items (at 1 items/min)
+2024-09-24 04:30:54 [scrapy.extensions.logstats] INFO: Crawled 21 pages (at 0 pages/min), scraped 15 items (at 0 items/min)
+2024-09-24 04:31:46 [darazscraperpw] ERROR: <twisted.python.failure.Failure playwright._impl._errors.TimeoutError: Page.goto: Timeout 120000ms exceeded.
+Call log:
+navigating to "https://www.daraz.com.bd/products/logo-earphone-good-bass-sound-quality-for-all-android-mobile-phone-high-bass-sound-quality-headphone-i259421285.html", waiting until "load"
+>
+2024-09-24 04:31:54 [scrapy.extensions.logstats] INFO: Crawled 21 pages (at 0 pages/min), scraped 15 items (at 0 items/min)
+2024-09-24 04:32:10 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:41880 ms (-18119) | latency:23760 ms | size:654856 bytes
+2024-09-24 04:32:10 [root] INFO: into item_parse with https://www.daraz.com.bd/products/geeoo-x10-plus-earphone-powerfull-sound-headphone-i320364625.html
+2024-09-24 04:32:20 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 1 | delay:24254 ms (-17625) | latency: 6628 ms | size:653817 bytes
+2024-09-24 04:32:20 [root] INFO: into item_parse with https://www.daraz.com.bd/products/c-uiisii-cx-c-i323542588.html
+2024-09-24 04:32:40 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 1 | delay:15070 ms (-9183) | latency: 5887 ms | size:681165 bytes
+2024-09-24 04:32:40 [root] INFO: into item_parse with https://www.daraz.com.bd/products/pubg-ps4-csgo-g6-g9-g20-71-i239532922.html
+2024-09-24 04:32:54 [scrapy.extensions.logstats] INFO: Crawled 24 pages (at 3 pages/min), scraped 18 items (at 3 items/min)
+2024-09-24 04:33:08 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 1 | delay:10094 ms (-4976) | latency: 5118 ms | size:645930 bytes
+2024-09-24 04:33:08 [root] INFO: into item_parse with https://www.daraz.com.bd/products/vmex-lf-05-headphone-heavy-bass-35mm-port-12m-wired-earphone-i368375571.html
+2024-09-24 04:33:54 [scrapy.extensions.logstats] INFO: Crawled 25 pages (at 1 pages/min), scraped 19 items (at 1 items/min)
+2024-09-24 04:34:40 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:60000 ms (+49905) | latency:80100 ms | size:364959 bytes
+2024-09-24 04:34:40 [root] INFO: into item_parse with https://www.daraz.com.bd/products/-i181078562.html?pdpBucketId=2
+2024-09-24 04:34:54 [scrapy.extensions.logstats] INFO: Crawled 26 pages (at 1 pages/min), scraped 19 items (at 0 items/min)
+2024-09-24 04:35:42 [root] WARNING: bad url sent by server for url: https://www.daraz.com.bd/products/-i181078562.html?pdpBucketId=2
+2024-09-24 04:35:42 [root] INFO: Now trying again with https://www.daraz.com.bd/products/-i181078562.html
+2024-09-24 04:35:42 [root] INFO: response request url : https://www.daraz.com.bd/products/-i181078562.html
+2024-09-24 04:35:54 [scrapy.extensions.logstats] INFO: Crawled 26 pages (at 0 pages/min), scraped 19 items (at 0 items/min)
+2024-09-24 04:36:54 [scrapy.extensions.logstats] INFO: Crawled 26 pages (at 0 pages/min), scraped 19 items (at 0 items/min)
+2024-09-24 04:37:02 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:60000 ms (+0) | latency:80284 ms | size:646352 bytes
+2024-09-24 04:37:02 [root] INFO: into item_parse with https://www.daraz.com.bd/products/one_plus-i214568387.html
+2024-09-24 04:37:54 [scrapy.extensions.logstats] INFO: Crawled 27 pages (at 1 pages/min), scraped 20 items (at 1 items/min)
+2024-09-24 04:38:25 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:60000 ms (+0) | latency:79814 ms | size:651901 bytes
+2024-09-24 04:38:25 [root] INFO: into item_parse with https://www.daraz.com.bd/products/vivo-in-ear-earphone-good-bass-sound-quality-for-all-android-white-color-headphone-ear-phone-earphone-headphone-headphone-i213214141.html
+2024-09-24 04:38:54 [scrapy.extensions.logstats] INFO: Crawled 28 pages (at 1 pages/min), scraped 21 items (at 1 items/min)
+2024-09-24 04:39:47 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:60000 ms (+0) | latency:78991 ms | size:654795 bytes
+2024-09-24 04:39:47 [root] INFO: into item_parse with https://www.daraz.com.bd/products/-i181078562.html
+2024-09-24 04:39:54 [scrapy.extensions.logstats] INFO: Crawled 29 pages (at 1 pages/min), scraped 22 items (at 1 items/min)
+2024-09-24 04:40:54 [scrapy.extensions.logstats] INFO: Crawled 29 pages (at 0 pages/min), scraped 22 items (at 0 items/min)
+2024-09-24 04:41:11 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:60000 ms (+0) | latency:79965 ms | size:648374 bytes
+2024-09-24 04:41:11 [root] INFO: into item_parse with https://www.daraz.com.bd/products/baseus-encok-c17-type-c-in-ear-earphone-headphone-i220280186.html
+2024-09-24 04:41:54 [scrapy.extensions.logstats] INFO: Crawled 30 pages (at 1 pages/min), scraped 23 items (at 1 items/min)
+2024-09-24 04:42:34 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:60000 ms (+0) | latency:79693 ms | size:653062 bytes
+2024-09-24 04:42:34 [root] INFO: into item_parse with https://www.daraz.com.bd/products/trn-mt1-pro-hifi-in-ear-earphone-dj-monitor-earphones-earbud-dynamic-sport-noise-cancelling-iem-headset-trn-x7ta1st1-for-kz-fiio-i234781405.html
+2024-09-24 04:42:54 [scrapy.extensions.logstats] INFO: Crawled 31 pages (at 1 pages/min), scraped 24 items (at 1 items/min)
+2024-09-24 04:43:54 [scrapy.extensions.logstats] INFO: Crawled 31 pages (at 0 pages/min), scraped 24 items (at 0 items/min)
+2024-09-24 04:43:57 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:60000 ms (+0) | latency:80151 ms | size:647255 bytes
+2024-09-24 04:43:57 [root] INFO: into item_parse with https://www.daraz.com.bd/products/remax-rm-510-wired-earphone-red-headphone-headphone-i116758701.html
+2024-09-24 04:44:07 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:33488 ms (-26511) | latency: 6976 ms | size:649569 bytes
+2024-09-24 04:44:07 [root] INFO: into item_parse with https://www.daraz.com.bd/products/uiisii-c100-in-ear-wired-earphones-with-mic-pink-i324149952.html
+2024-09-24 04:44:16 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 1 | delay:19308 ms (-14179) | latency: 5128 ms | size:648970 bytes
+2024-09-24 04:44:16 [root] INFO: into item_parse with https://www.daraz.com.bd/products/relme-buds-wired-earphones-with-mic-buds-wired-earphones-fell-real-bass-with-mic-free-01-pic-i260345597.html
+2024-09-24 04:44:49 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 1 | delay:12643 ms (-6665) | latency: 5978 ms | size:646880 bytes
+2024-09-24 04:44:49 [root] INFO: into item_parse with https://www.daraz.com.bd/products/geeoo-x10-plus-i319654826.html
+2024-09-24 04:44:54 [scrapy.extensions.logstats] INFO: Crawled 35 pages (at 4 pages/min), scraped 28 items (at 4 items/min)
+2024-09-24 04:45:17 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 1 | delay: 8864 ms (-3779) | latency: 5085 ms | size:661972 bytes
+2024-09-24 04:45:17 [root] INFO: into item_parse with https://www.daraz.com.bd/products/rivo-ep-103-i323964638.html
+2024-09-24 04:45:28 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 7088 ms (-1776) | latency: 5311 ms | size:661868 bytes
+2024-09-24 04:45:28 [root] INFO: into item_parse with https://www.daraz.com.bd/products/usb-type-c-earphone-mic-for-galaxy-note-10-note-10-galaxy-pluse-headphone-headphone-ear-phone-i272595043.html
+2024-09-24 04:45:36 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 1 | delay: 6029 ms (-1058) | latency: 4971 ms | size:650844 bytes
+2024-09-24 04:45:36 [root] INFO: into item_parse with https://www.daraz.com.bd/products/akg_super-bass-earphone-with-pouch-samsung-headphone-headphone-i169712017.html
+2024-09-24 04:45:54 [scrapy.extensions.logstats] INFO: Crawled 38 pages (at 3 pages/min), scraped 31 items (at 3 items/min)
+2024-09-24 04:46:34 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:54850 ms (+48820) | latency:54850 ms | size:649309 bytes
+2024-09-24 04:46:34 [root] INFO: into item_parse with https://www.daraz.com.bd/products/buds-wired-earphones-with-mic-buds-wired-earphones-with-mic-headphone-i221761464.html
+2024-09-24 04:46:54 [scrapy.extensions.logstats] INFO: Crawled 39 pages (at 1 pages/min), scraped 32 items (at 1 items/min)
+2024-09-24 04:47:54 [scrapy.extensions.logstats] INFO: Crawled 39 pages (at 0 pages/min), scraped 32 items (at 0 items/min)
+2024-09-24 04:47:57 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:60000 ms (+5149) | latency:79923 ms | size:655377 bytes
+2024-09-24 04:47:58 [root] INFO: into item_parse with https://www.daraz.com.bd/products/kz-edx-pro-dynamic-hifi-earphone-mic-sports-in-ear-earbud-i199561776.html
+2024-09-24 04:48:54 [scrapy.extensions.logstats] INFO: Crawled 40 pages (at 1 pages/min), scraped 33 items (at 1 items/min)
+2024-09-24 04:49:20 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:60000 ms (+0) | latency:79338 ms | size:648285 bytes
+2024-09-24 04:49:20 [root] INFO: into item_parse with https://www.daraz.com.bd/products/qkz-dm-9-hifi-i391441484.html
+2024-09-24 04:49:54 [scrapy.extensions.logstats] INFO: Crawled 41 pages (at 1 pages/min), scraped 34 items (at 1 items/min)
+2024-09-24 04:50:42 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:60000 ms (+0) | latency:78861 ms | size:360526 bytes
+2024-09-24 04:50:42 [root] INFO: into item_parse with https://www.daraz.com.bd/products/trn-mt1-pro-hifi-dynamic-driver-in-ear-monitor-hifi-bass-monitor-running-sport-earphone-i278716202.html?pdpBucketId=2
+2024-09-24 04:50:54 [scrapy.extensions.logstats] INFO: Crawled 42 pages (at 1 pages/min), scraped 34 items (at 0 items/min)
+2024-09-24 04:51:43 [root] WARNING: bad url sent by server for url: https://www.daraz.com.bd/products/trn-mt1-pro-hifi-dynamic-driver-in-ear-monitor-hifi-bass-monitor-running-sport-earphone-i278716202.html?pdpBucketId=2
+2024-09-24 04:51:43 [root] INFO: Now trying again with https://www.daraz.com.bd/products/trn-mt1-pro-hifi-dynamic-driver-in-ear-monitor-hifi-bass-monitor-running-sport-earphone-i278716202.html
+2024-09-24 04:51:43 [root] INFO: response request url : https://www.daraz.com.bd/products/trn-mt1-pro-hifi-dynamic-driver-in-ear-monitor-hifi-bass-monitor-running-sport-earphone-i278716202.html
+2024-09-24 04:51:54 [scrapy.extensions.logstats] INFO: Crawled 42 pages (at 0 pages/min), scraped 34 items (at 0 items/min)
+2024-09-24 04:52:54 [scrapy.extensions.logstats] INFO: Crawled 42 pages (at 0 pages/min), scraped 34 items (at 0 items/min)
+2024-09-24 04:53:03 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:60000 ms (+0) | latency:79375 ms | size:648917 bytes
+2024-09-24 04:53:03 [root] INFO: into item_parse with https://www.daraz.com.bd/products/uiisii-hm-12-i324340143.html
+2024-09-24 04:53:54 [scrapy.extensions.logstats] INFO: Crawled 43 pages (at 1 pages/min), scraped 35 items (at 1 items/min)
+2024-09-24 04:54:26 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:60000 ms (+0) | latency:80018 ms | size:651131 bytes
+2024-09-24 04:54:26 [root] INFO: into item_parse with https://www.daraz.com.bd/products/qkz-dm7-zinc-alloy-hifi-super-bass-in-ear-earphones-black-headphone-i258979742.html
+2024-09-24 04:54:54 [scrapy.extensions.logstats] INFO: Crawled 44 pages (at 1 pages/min), scraped 36 items (at 1 items/min)
+2024-09-24 04:55:49 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:60000 ms (+0) | latency:79134 ms | size:360520 bytes
+2024-09-24 04:55:49 [root] INFO: into item_parse with https://www.daraz.com.bd/products/trn-mt1-pro-hifi-dynamic-driver-in-ear-monitor-hifi-bass-monitor-running-sport-earphone-i278716202.html?pdpBucketId=2
+2024-09-24 04:55:54 [scrapy.extensions.logstats] INFO: Crawled 45 pages (at 1 pages/min), scraped 36 items (at 0 items/min)
+2024-09-24 04:56:50 [root] ERROR: same bad url sent by server by https://www.daraz.com.bd/products/trn-mt1-pro-hifi-dynamic-driver-in-ear-monitor-hifi-bass-monitor-running-sport-earphone-i278716202.html?pdpBucketId=2
+2024-09-24 04:56:54 [scrapy.extensions.logstats] INFO: Crawled 45 pages (at 0 pages/min), scraped 36 items (at 0 items/min)
+2024-09-24 04:56:56 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:32986 ms (-27013) | latency: 5972 ms | size:659518 bytes
+2024-09-24 04:56:56 [root] INFO: into item_parse with https://www.daraz.com.bd/products/remax-rm-512-35mm-i343980724.html
+2024-09-24 04:57:36 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:36872 ms (+3886) | latency:36872 ms | size:652707 bytes
+2024-09-24 04:57:36 [root] INFO: into item_parse with https://www.daraz.com.bd/products/-i338159266.html
+2024-09-24 04:57:54 [scrapy.extensions.logstats] INFO: Crawled 47 pages (at 2 pages/min), scraped 38 items (at 2 items/min)
+2024-09-24 04:58:54 [scrapy.extensions.logstats] INFO: Crawled 47 pages (at 0 pages/min), scraped 38 items (at 0 items/min)
+2024-09-24 04:59:39 [darazscraperpw] ERROR: <twisted.python.failure.Failure playwright._impl._errors.TimeoutError: Page.goto: Timeout 120000ms exceeded.
+Call log:
+navigating to "https://www.daraz.com.bd/products/remax-rm-711-null-headphone-i213786085.html", waiting until "load"
+>
+2024-09-24 04:59:50 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:23911 ms (-12961) | latency:10950 ms | size:649097 bytes
+2024-09-24 04:59:50 [root] INFO: into item_parse with https://www.daraz.com.bd/products/wire-control-headset-for-smartphone-35mm-in-ear-wired-microphone-volume-control-headset-earphone-headphone-headphone-i260887255.html
+2024-09-24 04:59:54 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 1 pages/min), scraped 39 items (at 1 items/min)
+2024-09-24 04:59:59 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 1 | delay:14621 ms (-9290) | latency: 5330 ms | size:660941 bytes
+2024-09-24 04:59:59 [root] INFO: into item_parse with https://www.daraz.com.bd/products/kin-k28-i324962947.html
+2024-09-24 05:00:27 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 1 | delay: 9511 ms (-5109) | latency: 4401 ms | size:358760 bytes
+2024-09-24 05:00:27 [root] INFO: into item_parse with https://www.daraz.com.bd/products/qkz-dm10-hifi-i381782772.html?pdpBucketId=2
+2024-09-24 05:00:54 [scrapy.extensions.logstats] INFO: Crawled 50 pages (at 2 pages/min), scraped 40 items (at 1 items/min)
+2024-09-24 05:01:28 [root] WARNING: bad url sent by server for url: https://www.daraz.com.bd/products/qkz-dm10-hifi-i381782772.html?pdpBucketId=2
+2024-09-24 05:01:28 [root] INFO: Now trying again with https://www.daraz.com.bd/products/qkz-dm10-hifi-i381782772.html
+2024-09-24 05:01:28 [root] INFO: response request url : https://www.daraz.com.bd/products/qkz-dm10-hifi-i381782772.html
+2024-09-24 05:01:37 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 9173 ms (-337) | latency: 8835 ms | size:651792 bytes
+2024-09-24 05:01:37 [root] INFO: into item_parse with https://www.daraz.com.bd/products/remax-rm-510-in-ear-earphone-with-metal-box-headphone-i200496649.html
+2024-09-24 05:01:46 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 7496 ms (-1677) | latency: 5818 ms | size:651531 bytes
+2024-09-24 05:01:46 [root] INFO: into item_parse with https://www.daraz.com.bd/products/uiisii-hm13-i344842963.html
+2024-09-24 05:01:54 [scrapy.extensions.logstats] INFO: Crawled 52 pages (at 2 pages/min), scraped 42 items (at 2 items/min)
+2024-09-24 05:01:55 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 7012 ms (-483) | latency: 6529 ms | size:649958 bytes
+2024-09-24 05:01:56 [root] INFO: into item_parse with https://www.daraz.com.bd/products/qkz-dm10-hifi-i381782772.html
+2024-09-24 05:02:05 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 6769 ms (-243) | latency: 6525 ms | size:666375 bytes
+2024-09-24 05:02:05 [root] INFO: into item_parse with https://www.daraz.com.bd/products/kz-edx-pro-hifi-i404764023.html
+2024-09-24 05:02:14 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 6230 ms (-538) | latency: 5692 ms | size:650020 bytes
+2024-09-24 05:02:14 [root] INFO: into item_parse with https://www.daraz.com.bd/products/g20-35mm-i362594034.html
+2024-09-24 05:02:23 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 5983 ms (-247) | latency: 5735 ms | size:657781 bytes
+2024-09-24 05:02:23 [root] INFO: into item_parse with https://www.daraz.com.bd/products/dm10-qkz-dm10-hifi-qkz-dm10-35mm-dreamy-deals-i324112852.html
+2024-09-24 05:02:34 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 7005 ms (+1022) | latency: 7005 ms | size:641944 bytes
+2024-09-24 05:02:34 [root] INFO: into item_parse with https://www.daraz.com.bd/products/-i324454468.html
+2024-09-24 05:02:42 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 6236 ms (-769) | latency: 5466 ms | size:660666 bytes
+2024-09-24 05:02:42 [root] INFO: into item_parse with https://www.daraz.com.bd/products/jbl-110-i285885044.html
+2024-09-24 05:02:51 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 6002 ms (-233) | latency: 5768 ms | size:652996 bytes
+2024-09-24 05:02:51 [root] INFO: into item_parse with https://www.daraz.com.bd/products/iphone-xiaomi-briame-tws-m90-53-i402251337.html
+2024-09-24 05:02:54 [scrapy.extensions.logstats] INFO: Crawled 59 pages (at 7 pages/min), scraped 48 items (at 6 items/min)
+2024-09-24 05:03:02 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 6894 ms (+892) | latency: 6894 ms | size:648146 bytes
+2024-09-24 05:03:02 [root] INFO: into item_parse with https://www.daraz.com.bd/products/remax-rm-512-i364715353.html
+2024-09-24 05:03:14 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 8860 ms (+1966) | latency: 8860 ms | size:656852 bytes
+2024-09-24 05:03:14 [root] INFO: into item_parse with https://www.daraz.com.bd/products/uiisii-hm13-wired-noise-cancelling-dynamic-heavy-bass-music-metal-in-ear-with-mic-earphone-ear-phone-headphone-headphone-headphone-ear-phone-earphone-i123806256.html
+2024-09-24 05:03:23 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 7178 ms (-1681) | latency: 5497 ms | size:646109 bytes
+2024-09-24 05:03:23 [root] INFO: into item_parse with https://www.daraz.com.bd/products/huadelai-twin-v30-35mm-i269197602.html
+2024-09-24 05:03:31 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 6114 ms (-1064) | latency: 5050 ms | size:651729 bytes
+2024-09-24 05:03:31 [root] INFO: into item_parse with https://www.daraz.com.bd/products/iphone-i322656164.html
+2024-09-24 05:03:54 [scrapy.extensions.logstats] INFO: Crawled 63 pages (at 4 pages/min), scraped 53 items (at 5 items/min)
+2024-09-24 05:04:54 [scrapy.extensions.logstats] INFO: Crawled 63 pages (at 0 pages/min), scraped 53 items (at 0 items/min)
+2024-09-24 05:04:55 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:60000 ms (+53885) | latency:81124 ms | size:649121 bytes
+2024-09-24 05:04:55 [root] INFO: into item_parse with https://www.daraz.com.bd/products/original-remax-rm-512-in-ear-35-mm-stereo-earphone-i368409268.html
+2024-09-24 05:05:54 [scrapy.extensions.logstats] INFO: Crawled 64 pages (at 1 pages/min), scraped 54 items (at 1 items/min)
+2024-09-24 05:06:18 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:60000 ms (+0) | latency:79342 ms | size:359391 bytes
+2024-09-24 05:06:18 [root] INFO: into item_parse with https://www.daraz.com.bd/products/tws-m25-i400207714.html?pdpBucketId=2
+2024-09-24 05:06:54 [scrapy.extensions.logstats] INFO: Crawled 65 pages (at 1 pages/min), scraped 54 items (at 0 items/min)
+2024-09-24 05:07:19 [root] WARNING: bad url sent by server for url: https://www.daraz.com.bd/products/tws-m25-i400207714.html?pdpBucketId=2
+2024-09-24 05:07:19 [root] INFO: Now trying again with https://www.daraz.com.bd/products/tws-m25-i400207714.html
+2024-09-24 05:07:19 [root] INFO: response request url : https://www.daraz.com.bd/products/tws-m25-i400207714.html
+2024-09-24 05:07:54 [scrapy.extensions.logstats] INFO: Crawled 65 pages (at 0 pages/min), scraped 54 items (at 0 items/min)
+2024-09-24 05:08:39 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:60000 ms (+0) | latency:79458 ms | size:657570 bytes
+2024-09-24 05:08:39 [root] INFO: into item_parse with https://www.daraz.com.bd/products/-i405990876.html
+2024-09-24 05:08:54 [scrapy.extensions.logstats] INFO: Crawled 66 pages (at 1 pages/min), scraped 55 items (at 1 items/min)
+2024-09-24 05:09:54 [scrapy.extensions.logstats] INFO: Crawled 66 pages (at 0 pages/min), scraped 55 items (at 0 items/min)
+2024-09-24 05:10:01 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:60000 ms (+0) | latency:79009 ms | size:658360 bytes
+2024-09-24 05:10:01 [root] INFO: into item_parse with https://www.daraz.com.bd/products/m10-tws-earphone-9d-stereo-led-digital-display-touch-cvc80-digital-noise-reduction-technology-headphone-headphone-ear-phone-earphone-i260293647.html
+2024-09-24 05:10:54 [scrapy.extensions.logstats] INFO: Crawled 67 pages (at 1 pages/min), scraped 56 items (at 1 items/min)
+2024-09-24 05:11:24 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:60000 ms (+0) | latency:79820 ms | size:359384 bytes
+2024-09-24 05:11:24 [root] INFO: into item_parse with https://www.daraz.com.bd/products/tws-m25-i400207714.html?pdpBucketId=2
+2024-09-24 05:11:54 [scrapy.extensions.logstats] INFO: Crawled 68 pages (at 1 pages/min), scraped 56 items (at 0 items/min)
+2024-09-24 05:12:25 [root] ERROR: same bad url sent by server by https://www.daraz.com.bd/products/tws-m25-i400207714.html?pdpBucketId=2
+2024-09-24 05:12:34 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:34417 ms (-25582) | latency: 8834 ms | size:650056 bytes
+2024-09-24 05:12:34 [root] INFO: into item_parse with https://www.daraz.com.bd/products/qkz-dm10-hifi-earphone-in-ear-earphones-i198859157.html
+2024-09-24 05:12:42 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:19615 ms (-14801) | latency: 4813 ms | size:359562 bytes
+2024-09-24 05:12:42 [root] INFO: into item_parse with https://www.daraz.com.bd/products/35mm-super-bass-in-ear-earpiece-earphones-for-all-brands-compatible-with-vivo-samsung-huawei-xiaomi-oppo-symphony-walton-high-quality-in-ear-earphone-for-vivo-i233918848.html?pdpBucketId=2
+2024-09-24 05:12:54 [scrapy.extensions.logstats] INFO: Crawled 70 pages (at 2 pages/min), scraped 57 items (at 1 items/min)
+2024-09-24 05:13:43 [root] WARNING: bad url sent by server for url: https://www.daraz.com.bd/products/35mm-super-bass-in-ear-earpiece-earphones-for-all-brands-compatible-with-vivo-samsung-huawei-xiaomi-oppo-symphony-walton-high-quality-in-ear-earphone-for-vivo-i233918848.html?pdpBucketId=2
+2024-09-24 05:13:43 [root] INFO: Now trying again with https://www.daraz.com.bd/products/35mm-super-bass-in-ear-earpiece-earphones-for-all-brands-compatible-with-vivo-samsung-huawei-xiaomi-oppo-symphony-walton-high-quality-in-ear-earphone-for-vivo-i233918848.html
+2024-09-24 05:13:43 [root] INFO: response request url : https://www.daraz.com.bd/products/35mm-super-bass-in-ear-earpiece-earphones-for-all-brands-compatible-with-vivo-samsung-huawei-xiaomi-oppo-symphony-walton-high-quality-in-ear-earphone-for-vivo-i233918848.html
+2024-09-24 05:13:49 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:12728 ms (-6886) | latency: 5842 ms | size:361561 bytes
+2024-09-24 05:13:49 [root] INFO: into item_parse with https://www.daraz.com.bd/products/remax-rm-510-wired-high-performance-earphones-headphone-i104846274.html?pdpBucketId=2
+2024-09-24 05:13:54 [scrapy.extensions.logstats] INFO: Crawled 71 pages (at 1 pages/min), scraped 57 items (at 0 items/min)
+2024-09-24 05:14:50 [root] WARNING: bad url sent by server for url: https://www.daraz.com.bd/products/remax-rm-510-wired-high-performance-earphones-headphone-i104846274.html?pdpBucketId=2
+2024-09-24 05:14:50 [root] INFO: Now trying again with https://www.daraz.com.bd/products/remax-rm-510-wired-high-performance-earphones-headphone-i104846274.html
+2024-09-24 05:14:50 [root] INFO: response request url : https://www.daraz.com.bd/products/remax-rm-510-wired-high-performance-earphones-headphone-i104846274.html
+2024-09-24 05:14:54 [scrapy.extensions.logstats] INFO: Crawled 71 pages (at 0 pages/min), scraped 57 items (at 0 items/min)
+2024-09-24 05:14:56 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 9051 ms (-3677) | latency: 5373 ms | size:651809 bytes
+2024-09-24 05:14:56 [root] INFO: into item_parse with https://www.daraz.com.bd/products/mi-purmi-mi-vivooppomi-i220389502.html
+2024-09-24 05:15:04 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 7022 ms (-2028) | latency: 4993 ms | size:647664 bytes
+2024-09-24 05:15:04 [root] INFO: into item_parse with https://www.daraz.com.bd/products/35mm-super-bass-in-ear-earpiece-earphones-for-all-brands-compatible-with-vivo-samsung-huawei-xiaomi-oppo-symphony-walton-high-quality-in-ear-earphone-for-vivo-i233918848.html
+2024-09-24 05:15:13 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 6155 ms (-867) | latency: 5287 ms | size:651432 bytes
+2024-09-24 05:15:13 [root] INFO: into item_parse with https://www.daraz.com.bd/products/remax-rm-510-wired-high-performance-earphones-headphone-i104846274.html
+2024-09-24 05:15:22 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay: 6033 ms (-121) | latency: 5912 ms | size:649283 bytes
+2024-09-24 05:15:22 [root] INFO: into item_parse with https://www.daraz.com.bd/products/kz-hd9-hifi-i336027540.html
+2024-09-24 05:15:54 [scrapy.extensions.logstats] INFO: Crawled 75 pages (at 4 pages/min), scraped 61 items (at 4 items/min)
+2024-09-24 05:16:05 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:40278 ms (+34244) | latency:40278 ms | size:647999 bytes
+2024-09-24 05:16:05 [root] INFO: into item_parse with https://www.daraz.com.bd/products/realme-rma101-i391634976.html
+2024-09-24 05:16:46 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:38576 ms (-1701) | latency:36874 ms | size:657086 bytes
+2024-09-24 05:16:46 [root] INFO: into item_parse with https://www.daraz.com.bd/products/u19-i327771308.html
+2024-09-24 05:16:53 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 1 | delay:21621 ms (-16954) | latency: 4667 ms | size:662448 bytes
+2024-09-24 05:16:54 [root] INFO: into item_parse with https://www.daraz.com.bd/products/10-tws-i399863824.html
+2024-09-24 05:16:54 [scrapy.extensions.logstats] INFO: Crawled 78 pages (at 3 pages/min), scraped 63 items (at 2 items/min)
+2024-09-24 05:17:54 [scrapy.extensions.logstats] INFO: Crawled 78 pages (at 0 pages/min), scraped 64 items (at 1 items/min)
+2024-09-24 05:18:19 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:60000 ms (+38378) | latency:79260 ms | size:671258 bytes
+2024-09-24 05:18:19 [root] INFO: into item_parse with https://www.daraz.com.bd/products/xiaomi-android-mini-pro-6-tws-i401461617.html
+2024-09-24 05:18:54 [scrapy.extensions.logstats] INFO: Crawled 79 pages (at 1 pages/min), scraped 65 items (at 1 items/min)
+2024-09-24 05:19:42 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:60000 ms (+0) | latency:79810 ms | size:651005 bytes
+2024-09-24 05:19:42 [root] INFO: into item_parse with https://www.daraz.com.bd/products/uiisii-hm13-i387715680.html
+2024-09-24 05:19:52 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:33623 ms (-26376) | latency: 7247 ms | size:647693 bytes
+2024-09-24 05:19:52 [root] INFO: into item_parse with https://www.daraz.com.bd/products/qkz-dm10-zinc-alloy-hifi-earphones-i2528297.html
+2024-09-24 05:19:54 [scrapy.extensions.logstats] INFO: Crawled 81 pages (at 2 pages/min), scraped 66 items (at 1 items/min)
+2024-09-24 05:20:01 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 1 | delay:19603 ms (-14020) | latency: 5583 ms | size:673922 bytes
+2024-09-24 05:20:01 [root] INFO: into item_parse with https://www.daraz.com.bd/products/xiaomi-huawei-iphone-tws-i401654241.html
+2024-09-24 05:20:54 [scrapy.extensions.logstats] INFO: Crawled 82 pages (at 1 pages/min), scraped 68 items (at 2 items/min)
+2024-09-24 05:21:17 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 1 | delay:19325 ms (-278) | latency:19047 ms | size:649738 bytes
+2024-09-24 05:21:17 [root] INFO: into item_parse with https://www.daraz.com.bd/products/wire-control-headset-for-smartphone-35mm-in-ear-wired-microphone-volume-control-headset-earphone-headphone-headphone-ear-phone-earphone-i225596144.html
+2024-09-24 05:21:27 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 1 | delay:12176 ms (-7148) | latency: 5028 ms | size:365215 bytes
+2024-09-24 05:21:27 [root] INFO: into item_parse with https://www.daraz.com.bd/products/qkz-dm7-hifi-i393550495.html?pdpBucketId=2
+2024-09-24 05:21:54 [scrapy.extensions.logstats] INFO: Crawled 84 pages (at 2 pages/min), scraped 69 items (at 1 items/min)
+2024-09-24 05:22:28 [root] WARNING: bad url sent by server for url: https://www.daraz.com.bd/products/qkz-dm7-hifi-i393550495.html?pdpBucketId=2
+2024-09-24 05:22:28 [root] INFO: Now trying again with https://www.daraz.com.bd/products/qkz-dm7-hifi-i393550495.html
+2024-09-24 05:22:28 [root] INFO: response request url : https://www.daraz.com.bd/products/qkz-dm7-hifi-i393550495.html
+2024-09-24 05:22:54 [scrapy.extensions.logstats] INFO: Crawled 84 pages (at 0 pages/min), scraped 69 items (at 0 items/min)
+2024-09-24 05:23:49 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:60000 ms (+47823) | latency:80884 ms | size:648739 bytes
+2024-09-24 05:23:49 [root] INFO: into item_parse with https://www.daraz.com.bd/products/realme-rma101-i223346343.html
+2024-09-24 05:23:54 [scrapy.extensions.logstats] INFO: Crawled 85 pages (at 1 pages/min), scraped 70 items (at 1 items/min)
+2024-09-24 05:24:54 [scrapy.extensions.logstats] INFO: Crawled 85 pages (at 0 pages/min), scraped 70 items (at 0 items/min)
+2024-09-24 05:25:11 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:60000 ms (+0) | latency:79192 ms | size:360908 bytes
+2024-09-24 05:25:11 [root] INFO: into item_parse with https://www.daraz.com.bd/products/trn-mt1-1dd-hifi-i278706751.html?pdpBucketId=2
+2024-09-24 05:25:54 [scrapy.extensions.logstats] INFO: Crawled 86 pages (at 1 pages/min), scraped 70 items (at 0 items/min)
+2024-09-24 05:26:12 [root] WARNING: bad url sent by server for url: https://www.daraz.com.bd/products/trn-mt1-1dd-hifi-i278706751.html?pdpBucketId=2
+2024-09-24 05:26:12 [root] INFO: Now trying again with https://www.daraz.com.bd/products/trn-mt1-1dd-hifi-i278706751.html
+2024-09-24 05:26:12 [root] INFO: response request url : https://www.daraz.com.bd/products/trn-mt1-1dd-hifi-i278706751.html
+2024-09-24 05:26:20 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 2 | delay:33666 ms (-26333) | latency: 7333 ms | size:658302 bytes
+2024-09-24 05:26:20 [root] INFO: into item_parse with https://www.daraz.com.bd/products/qkz-dm7-hifi-i393550495.html
+2024-09-24 05:26:28 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 1 | delay:19516 ms (-14149) | latency: 5367 ms | size:648774 bytes
+2024-09-24 05:26:28 [root] INFO: into item_parse with https://www.daraz.com.bd/products/remax-rm-510-remax-rm-510-remax-rm-510-i325913592.html
+2024-09-24 05:26:40 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 1 | delay:13355 ms (-6161) | latency: 7193 ms | size:650184 bytes
+2024-09-24 05:26:40 [root] INFO: into item_parse with https://www.daraz.com.bd/products/trn-mt1-1dd-hifi-i278706751.html
+2024-09-24 05:26:54 [scrapy.extensions.logstats] INFO: Crawled 89 pages (at 3 pages/min), scraped 73 items (at 3 items/min)
+2024-09-24 05:26:57 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 1 | delay: 9499 ms (-3855) | latency: 5644 ms | size:651806 bytes
+2024-09-24 05:26:57 [root] INFO: into item_parse with https://www.daraz.com.bd/products/uiisii-c100-super-bass-stereo-in-ear-headphone-black-i174062143.html
+2024-09-24 05:27:14 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 1 | delay: 7799 ms (-1699) | latency: 6099 ms | size:649571 bytes
+2024-09-24 05:27:14 [root] INFO: into item_parse with https://www.daraz.com.bd/products/ep-530-i209982865.html
+2024-09-24 05:27:25 [scrapy.extensions.throttle] INFO: slot: www.daraz.com.bd | conc: 1 | delay: 6956 ms (-843) | latency: 6113 ms | size:649281 bytes
+2024-09-24 05:27:25 [root] INFO: into item_parse with https://www.daraz.com.bd/products/one_plus-i234037167.html
+2024-09-24 05:27:28 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-09-24 05:27:28 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 2,
+ 'downloader/exception_type_count/playwright._impl._errors.TimeoutError': 2,
+ 'downloader/request_bytes': 73786,
+ 'downloader/request_count': 94,
+ 'downloader/request_method_count/GET': 94,
+ 'downloader/response_bytes': 57622020,
+ 'downloader/response_count': 92,
+ 'downloader/response_status_count/200': 92,
+ 'dupefilter/filtered': 40,
+ 'elapsed_time_seconds': 3813.988829,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 9, 23, 23, 27, 28, 276267, tzinfo=datetime.timezone.utc),
+ 'item_scraped_count': 76,
+ 'log_count/ERROR': 5,
+ 'log_count/INFO': 286,
+ 'log_count/WARNING': 10,
+ 'memusage/max': 189513728,
+ 'memusage/startup': 76234752,
+ 'playwright/browser_count': 1,
+ 'playwright/context_count': 1,
+ 'playwright/context_count/max_concurrent': 1,
+ 'playwright/context_count/persistent/False': 1,
+ 'playwright/context_count/remote/False': 1,
+ 'playwright/page_count': 94,
+ 'playwright/page_count/max_concurrent': 2,
+ 'playwright/request_count': 15582,
+ 'playwright/request_count/aborted': 6454,
+ 'playwright/request_count/method/GET': 13758,
+ 'playwright/request_count/method/POST': 1824,
+ 'playwright/request_count/navigation': 137,
+ 'playwright/request_count/resource_type/document': 137,
+ 'playwright/request_count/resource_type/fetch': 160,
+ 'playwright/request_count/resource_type/font': 483,
+ 'playwright/request_count/resource_type/image': 6454,
+ 'playwright/request_count/resource_type/other': 30,
+ 'playwright/request_count/resource_type/ping': 1281,
+ 'playwright/request_count/resource_type/script': 5248,
+ 'playwright/request_count/resource_type/stylesheet': 632,
+ 'playwright/request_count/resource_type/xhr': 1157,
+ 'playwright/response_count': 8877,
+ 'playwright/response_count/method/GET': 7186,
+ 'playwright/response_count/method/POST': 1691,
+ 'playwright/response_count/resource_type/document': 137,
+ 'playwright/response_count/resource_type/fetch': 160,
+ 'playwright/response_count/resource_type/font': 483,
+ 'playwright/response_count/resource_type/other': 30,
+ 'playwright/response_count/resource_type/ping': 1281,
+ 'playwright/response_count/resource_type/script': 5130,
+ 'playwright/response_count/resource_type/stylesheet': 632,
+ 'playwright/response_count/resource_type/xhr': 1024,
+ 'request_depth_max': 4,
+ 'response_received_count': 92,
+ 'scheduler/dequeued': 94,
+ 'scheduler/dequeued/disk': 94,
+ 'scheduler/enqueued': 94,
+ 'scheduler/enqueued/disk': 94,
+ 'spider_exceptions/TimeoutError': 1,
+ 'start_time': datetime.datetime(2024, 9, 23, 22, 23, 54, 287438, tzinfo=datetime.timezone.utc)}
+2024-09-24 05:27:28 [scrapy.core.engine] INFO: Spider closed (finished)
+2024-09-24 05:27:28 [scrapy-playwright] INFO: Closing download handler
+2024-09-24 05:27:28 [scrapy-playwright] INFO: Closing download handler
+2024-09-24 05:27:28 [scrapy-playwright] INFO: Closing browser
