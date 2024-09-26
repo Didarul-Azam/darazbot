@@ -74,7 +74,7 @@ class DarazscraperSpiderPw(scrapy.Spider):
             await page.click(next_page_selector)
             await asyncio.sleep(1)
             await page.wait_for_selector('div[data-qa-locator="general-products"]', timeout=120000)
-            time.sleep(1)
+            
             next_url = page.url
             logging.info(f'page no. {pageNO+1} url : {next_url}')
             yield scrapy.Request(
